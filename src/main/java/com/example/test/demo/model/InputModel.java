@@ -16,6 +16,14 @@ public class InputModel {
     @Column(name = "input")
     private String angularInput;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public InputModel() {
     }
 
