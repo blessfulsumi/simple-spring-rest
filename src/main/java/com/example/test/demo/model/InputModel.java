@@ -2,8 +2,18 @@ package com.example.test.demo.model;
 
 import org.springframework.stereotype.Component;
 
-@Component
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class InputModel {
+
+    @Id
+    @GeneratedValue
+    private long id;
+    @Column(name = "input")
     private String angularInput;
 
     public InputModel() {
